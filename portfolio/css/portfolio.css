@@ -1,4 +1,3 @@
-
 /* 메인 비주얼 스타일 */
 .hero {
   position: relative;
@@ -11,10 +10,10 @@
 }
 
 .hero-image {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-position: center;
-  background-image: url('../images/portfolio_mainvisual.png');
+  background-image: url('../images/portfolio_mainvisual.jpg');
   background-size: cover;
   position: absolute;
   top: 0;
@@ -36,36 +35,47 @@
 /* 컨텐츠 섹션 스타일 */
 section {
   padding: 80px 0;
-  margin: 0 auto;
+  margin:  0 auto;
   position: relative;
 }
-.portfolio{
+
+.portfolio {
   height: auto;
 }
-.portfolio-box{
+
+.portfolio-box {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: space-between;
   position: relative;
+  padding: 0 20px;
 }
-.portfolio-box>li{
-  width: 30%;
+
+.portfolio-box > li {
+  flex: 1 1 calc(33.333% - 20px);
   height: 200px;
-  margin: 10px 10px;
   background-color: #ccc;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.portfolio-box>li>img{
+
+.portfolio-box > li > img {
   width: 100%;
-  background-color: #ccc;
+  height: 100%;
+  object-fit: cover;
   position: absolute;
   top: 0;
+  left: 0;
 }
-.portfolio-box>li>p{
+
+.portfolio-box > li > p {
   width: 100%;
   height: 30px;
   color: white;
@@ -73,19 +83,34 @@ section {
   opacity: 0.7;
   z-index: 1;
   text-align: center;
-  font: bold 16px/30px NotoSansKR;
-  position: absolute;
-  bottom: 0;
+  font: bold 16px/30px 'NotoSansKR', sans-serif;
+  position: relative;
 }
 
 @media screen and (max-width: 1400px) {
-
   .header-container,
-  .businessareas_subtitle,
   .portfolio-box,
   .footer-content {
     max-width: 90%;
     margin: 0 auto;
+  }
+
+  .portfolio-box {
+    gap: 15px;
+  }
+
+  .portfolio-box > li {
+    flex: 1 1 calc(33.333% - 15px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio-box > li {
+    flex: 1 1 calc(50% - 15px);
+  }
+
+  .hero h1 {
+    font-size: 36px;
   }
 }
 
@@ -93,11 +118,24 @@ section {
   .header-container {
     flex-direction: column;
     align-items: flex-start;
-    border-bottom: none;
   }
 
   nav ul {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .portfolio-box > li {
+    flex: 1 1 100%;
+  }
+
+  .hero h1 {
+    font-size: 32px;
   }
 
   .company-info {
