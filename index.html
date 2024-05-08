@@ -136,7 +136,7 @@
             <script type="text/javascript"
           src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ed40b48e303fb91d60041d0804553856"></script>
         <script>
-          var container = document.getElementById('map');
+          var container = document.getElementsByClassName('map');
           var options = {
             center: new kakao.maps.LatLng(37.62201609704858, 127.0866519202624),
             level: 3
@@ -147,7 +147,7 @@
         </section>
         <section class="cta">
             <p>진원종합관리(주)와 만나보세요.</p>
-            <button class="contact-us" href="tel:02-949-3422">견적 문의하기</button>
+            <button class="contact-us"><a href="tel:02-949-3422">견적 문의하기</a></button>
             <!-- <script>
                 document.getElementById('contact-us').addEventListener('click', function() {
                     window.location.href = 'mailto:jw99@jwonServices.onmicrosoft.com';
