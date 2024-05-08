@@ -1,0 +1,285 @@
+
+/* 메인 비주얼 스타일 */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100vw;
+  height: 100%;
+  background-position: center;
+  background-image: url('../images/business_areas_mainvisual.png');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  opacity: 0.9;
+}
+
+.hero-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #fff;
+}
+
+/* 컨텐츠 섹션 스타일 */
+#businessareas {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/*사업분야 서브메뉴 스타일*/
+.businessareas_menu {
+  width: 100%;
+  margin-bottom: 30px;
+  border-bottom: solid 2px #f2f2f2;
+}
+
+.businessareas_menu ul {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.businessareas_menu ul li {
+  flex: 1;
+  text-align: center;
+}
+
+.businessareas_menu ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.businessareas_menu ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.businessareas_title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+/*사업분야 서브메뉴 스타일 끝*/
+
+h4.businessareas_subtitle{
+  width: 200px;
+  height: 80px;
+  font: bold 24px/80px "Noto Sans KR";
+  margin: 40px 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  /* background-color: red; */
+}
+
+/*관리기본방침*/
+.management_policy{
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #F2F2F2;
+}
+.management_policy-container{
+  width: 1400px;
+  height: 100vh;
+  margin: 0px auto;
+  position: relative;
+  /* background-color: blue; */
+}
+
+.management_policy-container img,
+.expense-container img {
+  max-width: 100%;
+}
+
+
+.management_policy-container>img{
+  position: absolute;
+  top: 100px;
+}
+
+/*사업분야및형태*/
+.businessarea_list{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.businessarea_list-container{
+  width: 1400px;
+  height: 630px;
+  margin: 30px auto;
+  padding-bottom: 100px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.businessarea_list-container>section{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.businessarea_list-container>section>ul{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+.businessarea_list-container>section>ul>li{
+  width: 30%;
+  height: 500px;
+
+  /* background-color: red; */
+}
+p.businessarea_list_img{
+  width: 100%;
+  height: 250px;
+  /* background-color: yellow; */
+}
+p.businessarea_list_img img{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+p.businessarea_list_title{
+  width: 100%;
+  height: 30px;
+  padding: 2px;
+  box-sizing: border-box;
+  font: bold 20px/30px "Noto Sans KR";
+  margin-bottom: 10px;
+  /* background-color: blue; */
+}
+p.businessarea_list_division{
+  width: 100%;
+  height: 23px;
+  font: lighter 16px/23px "Noto Sans KR" ;
+}
+p.businessarea_list_subtext{
+  width: 100%;
+  height: 20px;
+  font: lighter 12px/20px "Noto Sans KR";
+  color: #4973F2;
+}
+ul.businessarea_list_text{
+  width: 400px;
+  font: normal 14px/21px "Noto Sans KR";
+  list-style: square;
+  box-sizing: border-box;
+  /* background-color: red; */
+  margin-top: 5px;
+}
+
+/*관리비용절감방안*/
+.expense{
+  width: 100%;
+  height: 600px;
+  position: relative;
+  /* background-color: blue; */
+}
+.expense-container{
+  width: 1400px;
+  margin: 0px auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.expense-container>img{
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  /* background-color: red; */
+}
+.sos{
+  width: 100%;
+  background: #F2F2F2;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.sos-container{
+  width: 1400px;
+  height: auto;
+  margin: 0px auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: red; */
+}
+.sos-container>img{
+  width: 100%;
+  height: auto;
+  margin: 40px;
+  /* background-color: red; */
+}
+
+/*계약및관리*/
+.contract{
+  width: 100%;
+  height: auto;
+}
+.contract-container{
+  width: 1400px;
+  margin: 0px auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.contract-container>img{
+  width: 100%;
+  height: auto;
+  margin: 40px;
+}
+
+
+@media screen and (max-width: 1400px) {
+
+  .header-container,
+  .businessareas_subtitle,
+  .management_policy-container,
+  .businessarea_list-container,
+  .expense-container,
+  .sos-container,
+  .contract-container,
+  .footer-content {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: none;
+  }
+
+  nav ul {
+    margin-top: 20px;
+  }
+
+  .company-info {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+}

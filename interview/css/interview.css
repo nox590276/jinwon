@@ -1,0 +1,258 @@
+
+/* 메인 비주얼 스타일 */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100vw;
+  height: 100%;
+  background-position: center;
+  background-image: url('../../images/mainvisual.png');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  opacity: 0.9;
+}
+
+.hero-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #fff;
+}
+
+/* 컨텐츠 섹션 스타일 */
+main {
+  width: 100%;
+  height: auto;
+}
+
+.ceo-message-container,
+.certification,
+.location-container {
+  padding: 80px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h3.interview_title {
+  width: 100%;
+  text-align: center;
+  font: bold 32px/45px "Noto Sans KR";
+  color: black;
+  margin-bottom: 50px;
+}
+
+div#interview_box {
+  width: 100%;
+  height: auto;
+}
+
+div#interview_box p#hello {
+  width: 100%;
+  height: 100px;
+  background-color: #1B2040;
+  color: white;
+  font: bold 24px/100px "Noto Sans KR";
+  text-align: center;
+}
+
+div#interview_text {
+  width: 100%;
+  height: auto;
+  background-color: #F2F2F2;
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+div#interview_text p#mynameis {
+  font: normal 20px/30px "Noto Sans KR";
+  color: black;
+  margin-bottom: 20px;
+}
+
+div#interview_text p#hi {
+  font: bold 20px/40px "Noto Sans KR";
+  margin-bottom: 20px;
+}
+
+div#interview_text p#sign {
+  font: bold 16px "Noto Sans KR";
+  color: black;
+  position: absolute;
+  bottom: 140px;
+  right: 60px;
+}
+
+/* 허가 및 인증현황 스타일 */
+.certifications {
+  width: 100%;
+  background: url(../images/certification_wrap.png);
+  background-size: cover;
+}
+
+div#certification {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  padding: 80px 0;
+}
+
+ul#certification_img {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+ul#certification_img li {
+  width: calc(33.33% - 30px);
+  text-align: center;
+}
+
+ul#certification_img>li>p.img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+ul#certification_img>li>p.img>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ul#certification_img>li>p.text {
+  font: normal 20px/1.5 "Noto Sans KR";
+  color: white;
+}
+ul#certification_img li:last-child {
+  margin-right: 0px;
+}
+
+h3#interview_title_2 {
+  color: white;
+}
+
+.organization {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.organizations {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.organizations>img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.location {
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
+div#interview_map {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+div#interview_map p#map_img {
+  width: 100%;
+  height: 340px;
+  background: url(../images/interview_map.png) no-repeat;
+  margin-top: 50px;
+}
+
+div#interview_map ul#map_text_list {
+  width: 100%;
+  height: auto;
+  font: lighter 20px/43px "Noto Sans KR";
+  margin-top: 50px;
+}
+
+div#interview_map ul#map_text_list li {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 10px 0;
+}
+
+div#interview_map ul#map_text_list li::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+ul#map_text_list li>span.map_text_title {
+  width: 100px;
+  height: 28px;
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ul#map_text_list li>span.map_text_title::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+ul#map_text_list li>span.map_text {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1400px) {
+  .header-container,
+  .ceo-message-container,
+  .certification,
+  .organizations,
+  .location-container,
+  .footer-content {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: none;
+  }
+
+  nav ul {
+    margin-top: 20px;
+  }
+
+  .company-info {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+}

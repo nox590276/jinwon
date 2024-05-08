@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>진원종합관리(주)</title>
+  <link rel="stylesheet" href="./css/interview.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../images/logo/진원종합관리(주)_로고_화이트.png" alt="회사 로고">
+          <span>진원종합관리(주)</span>
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./interview.html">회사소개</a></li>
+          <li><a href="../business_areas/business_areas.html">사업분야</a></li>
+          <li><a href="../portfolio/portfolio.html">사업실적</a></li>
+          <li><a href="../inquiry/inquiry.html">고객센터</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-content">
+        <h1>회사소개</h1>
+      </div>
+    </section>
+
+    <section class="ceo-message">
+      <div class="ceo-message-container">
+        <h3 class="interview_title">CEO인사말</h3>
+        <div id="interview_box">
+          <p id="hello">고객에게 誠心을 다하는 기업체입니다.</p>
+          <div id="interview_text">
+            <p id="hi">
+              안녕하십니까? 진원종합관리 대표이사 최창호 입니다. 저희 회사 방문을 진심으로 환영합니다.
+            </p>
+            <p id="mynameis">
+              급변하는 사회환경 과 산업구도의 복잡성으로 양질의 서비스 제공은 경쟁력의 바탕이자 기업의 이미지 입니다.<br>
+              이에 “진원종합관리㈜”는 오랜 실무경험과 축적된 Know-How를 바탕으로 최우선 전문인력양성에 중점을 두고 있습니다.
+            </p>
+            <p id="mynameis">체계적인 교육시스템을 거쳐 현장배치를 하며,표준화된 지도관리와 최상의 서비스 제공으로 고객의 만족과 이익증대를 “진원종합관리㈜”의 목표로 삼고 있습니다.</p>
+            <p id="mynameis">앞으로 저희 임직원 일동은 고객 제일주의의 신념아래 최고보다는 최선을 다하는 “(주)진원종합관리”가 될 것을 약속 드립니다.<br>
+              감사합니다.</p>
+            <p id="sign">(주)진원종합관리 대표이사 최창호 배상</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="certifications">
+      <div class="certification">
+        <h3 class="interview_title" id="interview_title_2">허가 및 인증현황</h3>
+        <ul id="certification_img">
+          <li>
+            <p class="img">
+              <img src="./images/permit.png" alt="허가증">
+            </p>
+            <p class="text">허가증</p>
+          </li>
+          <li>
+            <p class="img">
+              <img src="./images/membership.png" alt="회원증">
+            </p>
+            <p class="text">회원증</p>
+          </li>
+          <li>
+            <p class="img">
+              <img src="./images/compete.png" alt="경쟁입찰참가자격등록증">
+            </p>
+            <p class="text">경쟁입찰참가자격등록증</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="organization">
+      <h3 class="interview_title">조직도</h3>
+      <p class="organizations">
+        <img src="./images/조직도.png" alt="진원조직도"/>
+      </p>
+    </section>
+
+    <section class="location">
+      <div class="location-container">
+        <h3 class="interview_title">찾아오시는길</h3>
+        <div id="interview_map">
+          <p id="map_img"></p>
+          <script type="text/javascript"
+            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ed40b48e303fb91d60041d0804553856"></script>
+          <script>
+            var container = document.getElementById('map_img');
+            var options = {
+              center: new kakao.maps.LatLng(37.62201609704858, 127.0866519202624),
+              level: 3
+            };
+
+            var map = new kakao.maps.Map(container, options);
+          </script>
+          <ul id="map_text_list">
+            <li><span class="map_text_title">주소</span><span class="map_text">서울 노원구 노원로 3, 506호 우토파크프라자</span></li>
+            <li><span class="map_text_title">전화</span><span class="map_text"> 02-949-3422</span></li>
+            <li><span class="map_text_title">팩스</span><span class="map_text"> 02-949-3426</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="company-info">
+        <img src="../images/logo/진원종합관리(주)_FULL로고_화이트.png" alt="진원종합관리(주)">
+        <ul>
+          <li>서울 노원구 노원로3, 506호 (우토파크프라자,공릉동)</li>
+          <li>대표이사: 최 창 호</li>
+          <li>대표전화: 02-949-3422~3</li>
+          <li>이메일: jw99@jwonServices.onmicrosoft.com</li>
+          <li>Fax: 02-949-3426</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 진원종합관리(주). All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

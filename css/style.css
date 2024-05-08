@@ -1,0 +1,363 @@
+
+    /* 메인 비주얼 스타일 */
+  .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/mainvisual.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+  }
+  
+  
+  .hero-content {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    justify-content: space-between;
+  }
+  .hero-textbox{
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: start;
+    position: relative;
+    bottom: 40px;
+  }
+  .hero-cta{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .hero-cta>ul{
+    width: 500px;
+    height: 40px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: 40px;
+  }
+  
+  .hero h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font: lighter 48px Arial;
+  }
+
+  .hero h1>span{
+    font: bold 50px Arial;
+  }
+  
+  .hero p {
+    color: #fff;
+    font:bold 24px Arial;
+  }
+
+    /* 컨텐츠 섹션 스타일 */
+  .services {
+    padding: 80px 0;
+    margin: 0 auto;
+    text-align: center;
+    background-color:  #F2F2F2;
+  }
+  
+  .services h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+  
+  .services p {
+    font: bold 18px sans-serif;
+    color:#1B2040;
+    margin-bottom: 10px;
+  }
+  
+  .services-item>a>p{
+    text-decoration: none;
+  }
+  
+  .service-items {
+    max-width: 1400px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: red; */
+  }
+  
+  .service-item {
+    text-align: center;
+  }
+
+.service-item a{
+    text-decoration: none;
+    color: black;
+}
+  
+  .icon {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .icon img {
+    width: 75px;
+    height: 75px;
+  }
+  
+  .service-item p {
+    font-size: 24px;
+  }
+  
+  .history {
+    padding: 80px 0;
+    text-align: center;
+    background-image: url(../images/maincontents_wrap.png);
+    color: white;
+  }
+  
+  .history h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .history p {
+    font: bold 18px sans-serif;
+    margin-bottom: 40px;
+  }
+  
+  .timeline {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .year {
+    font-size: 48px;
+    font-weight: bold;
+    margin-right: 40px;
+  }
+  
+  .event {
+    flex: 1;
+    height: 120px;
+    background-color: #ddd;
+  }
+  
+  .performance {
+    padding: 80px 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .performance h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+  
+  .performance p {
+    font: bold 18px sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .performance-slider {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .performance-items {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 5 / 3); /* 5개의 사진 중 3개만 보이도록 설정 */
+  }
+  
+  .performance-item {
+    width: calc(100% / 5);
+    height: 400px;
+    /* background-color: #ddd; */
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    box-sizing: border-box;
+  }
+  
+  .performance-item img {
+    width: 100%;
+  }
+  
+  .performance-item p {
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: black;
+    opacity: 0.7;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    bottom: -20px;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: #1B2040;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .prev-button {
+    left: 0;
+  }
+  
+  .next-button {
+    right: 0;
+  }
+  
+  .view-more {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color:  #1B2040;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+
+  .contact {
+    padding: 80px 0;
+    background-color:#F2F2F2;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+  
+  .contact p {
+    font: bold 18px sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .map {
+    max-width: 1400px;
+    height: 450px;
+    background-image: url(../images/simplemainmap.png);
+    margin: 0 auto;
+  }
+  .cta {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #1B2040;
+  }
+  
+  .cta p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .contact-us {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #F2911B;
+    color: #1B2040;
+    text-decoration: none;
+    font: bold 20px sans-serif;
+  }
+
+    /* 푸터 스타일 */
+  
+  
+  @media screen and (max-width: 1400px) {
+    .header-container,
+    .service-items,
+    .timeline,
+    .performance,
+    .map,
+    .footer-content {
+      max-width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      align-items: flex-start;
+      border-bottom:none;
+    }
+  
+    nav ul {
+      margin-top: 20px;
+    }
+  
+    .service-items,
+    .performance-items {
+      flex-direction: column;
+    }
+  
+    .service-item,
+    .performance-item {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .timeline-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .year {
+      margin-bottom: 20px;
+    }
+  
+    .event {
+      width: 100%;
+    }
+  
+    .company-info,
+    .quick-links {
+      flex-basis: 100%;
+      margin-bottom: 40px;
+    }
+  }
