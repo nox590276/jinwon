@@ -76,6 +76,9 @@ footer {
   flex-basis: 100%;
   margin-bottom: 40px;
 }
+.company-info ul{
+  margin-top: 20px;
+}
 
 .company-info ul>li{
   margin-bottom: 5px;
