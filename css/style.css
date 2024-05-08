@@ -282,7 +282,6 @@
   .map {
     max-width: 1400px;
     height: 450px;
-    background-image: url(../images/simplemainmap.png);
     margin: 0 auto;
   }
   .cta {

@@ -178,7 +178,6 @@ div#interview_map {
 div#interview_map p#map_img {
   width: 100%;
   height: 340px;
-  background: url(../images/interview_map.png) no-repeat;
   margin-top: 50px;
 }
 
