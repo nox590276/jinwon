@@ -264,6 +264,7 @@
   
 
   .contact {
+    max-width: 1400px;
     padding: 80px 0;
     background-color:#F2F2F2;
     text-align: center;
@@ -280,10 +281,11 @@
   }
   
   div#map {
-    max-width: 1400px;
+    width: 100%;
     height: 450px;
     margin: 0 auto;
     background-color: #F2F2F2;
+    z-index: 1;
   }
   .cta {
     padding: 80px 0;
