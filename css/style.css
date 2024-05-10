@@ -279,7 +279,7 @@
     margin-bottom: 20px;
   }
   
-  .map {
+  #map {
     max-width: 1400px;
     height: 450px;
     margin: 0 auto;
