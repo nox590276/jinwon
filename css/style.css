@@ -320,7 +320,7 @@
     .service-items,
     .timeline,
     .performance,
-    .map,
+    #map,
     .footer-content {
       max-width: 90%;
     }
