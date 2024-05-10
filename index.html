@@ -131,9 +131,10 @@
           </section>
 
         <section class="contact">
-            <p>JINWONCOMPANY ADRESS</p>
+            <div id="main_map">
+                <p>JINWONCOMPANY ADRESS</p>
             <h2>찾아오시는 길</h2>
-            <div id="map"></div>
+            <p id="map"></p>
             <script type="text/javascript"
           src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d4a715438d7ddac0af27a70f0a12129a"></script>
         <script>
@@ -145,6 +146,7 @@
 
           var map = new kakao.maps.Map(container, options);
         </script>
+            </div>
         </section>
         <section class="cta">
             <p>진원종합관리(주)와 만나보세요.</p>
