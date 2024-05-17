@@ -1,4 +1,3 @@
-
 /* 메인 비주얼 스타일 */
 .hero {
   position: relative;
@@ -8,6 +7,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .hero-image {
@@ -38,6 +38,7 @@
   max-width: 1400px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 40px;
 }
 
 /*사업분야 서브메뉴 스타일*/
@@ -79,7 +80,7 @@
 }
 /*사업분야 서브메뉴 스타일 끝*/
 
-h4.businessareas_subtitle{
+h4.businessareas_subtitle {
   width: 200px;
   height: 80px;
   font: bold 24px/80px "Noto Sans KR";
@@ -91,13 +92,14 @@ h4.businessareas_subtitle{
 }
 
 /*관리기본방침*/
-.management_policy{
+.management_policy {
   width: 100%;
   height: auto;
   position: relative;
   background-color: #F2F2F2;
+  margin-bottom: 40px;
 }
-.management_policy-container{
+.management_policy-container {
   width: 1400px;
   height: 100vh;
   margin: 0px auto;
@@ -110,19 +112,19 @@ h4.businessareas_subtitle{
   max-width: 100%;
 }
 
-
-.management_policy-container>img{
+.management_policy-container>img {
   position: absolute;
   top: 100px;
 }
 
 /*사업분야및형태*/
-.businessarea_list{
+.businessarea_list {
   width: 100%;
   height: auto;
   position: relative;
+  margin-bottom: 40px;
 }
-.businessarea_list-container{
+.businessarea_list-container {
   width: 1400px;
   height: 630px;
   margin: 30px auto;
@@ -131,29 +133,29 @@ h4.businessareas_subtitle{
   top: 0px;
   left: 0px;
 }
-.businessarea_list-container>section{
+.businessarea_list-container>section {
   width: 100%;
   height: 400px;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
-.businessarea_list-container>section>ul{
+.businessarea_list-container>section>ul {
   width: 100%;
   height: 400px;
   display: flex;
   justify-content: space-between;
 }
-.businessarea_list-container>section>ul>li{
+.businessarea_list-container>section>ul>li {
   width: 30%;
   height: 500px;
 }
-.businessarea_list-container>section>ul>li>img{
+.businessarea_list-container>section>ul>li>img {
   width: 100%;
 }
 
 /*관리비용절감방안*/
-.expense{
+.expense {
   width: 100%;
   height: 600px;
   position: relative;
