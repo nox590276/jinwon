@@ -122,8 +122,6 @@ ul#guard_text_box {
 
 ul#guard_text_box > li {
     width: 30%;
-    border: solid 5px #F2F2F2;
-    box-sizing: border-box;
     position: relative;
     margin-bottom: 3%;
 }
