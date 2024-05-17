@@ -126,42 +126,15 @@
   }
   ul#guard_text_box>li{
     width: 30%;
-    height: 235px;
+    height: auto;
     border: solid 5px #F2F2F2;
     box-sizing: border-box;
     position: relative;
     top: 0px;
     left: 0px;
   }
-  ul#guard_text_box>li>p.guard_operation_icon{
-    width: 73px;
-    height: 73px;
-    position: absolute;
-    top: 20px;
-    left: 30px;
-  }
   ul#guard_text_box>li>p.guard_operation_icon img{
     width: 100%;
-  }
-  p.guard_operation_texttitle{
-    width: 100px;
-    height: 30px;
-    font: bold 20px/30px "Noto Sans KR";
-    color: #4973F2;
-    position: absolute;
-    top: 100px;
-    left: 30px;
-  }
-  ul#guard_text_box>li>ul{
-    width: 230px;
-    height: 70px;
-    position: absolute;
-    left: 40px;
-    bottom: 10px;
-    font: normal 16px/24px "Noto Sans KR";
-  }
-  ul#guard_text_box>li>ul>li{
-    list-style: disc;
   }
 
   /*프로세스*/
