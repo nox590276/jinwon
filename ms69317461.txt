@@ -1,0 +1,5 @@
+{
+  "Description": "웹 사이트 루트의 위치 Microsoft 365에 대한 도메인 소유권 확인 파일",
+  "Domain": "jinwone.co.kr",
+  "Id": "14ba47f7-b5e9-461f-94b8-1a4f940880e6"
+}
