@@ -59,7 +59,7 @@ section {
 
 .portfolio-box > li {
   flex: 1 1 calc(33.333% - 20px);
-  height: 200px;
+  height: 20vh;
   background-color: #ccc;
   position: relative;
   overflow: hidden;
@@ -71,7 +71,6 @@ section {
 
 .portfolio-box > li > img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
