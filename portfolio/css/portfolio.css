@@ -59,7 +59,7 @@ section {
 
 .portfolio-box > li {
   flex: 1 1 calc(33.333% - 20px);
-  height: 20vh;
+  height: 35vh;
   background-color: #ccc;
   position: relative;
   overflow: hidden;
