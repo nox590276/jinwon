@@ -89,7 +89,6 @@
     height: 35px;
     font: bold 24px "Noto Sans KR";
     position: relative;
-    text-align: left;
   }
   
   /*관리기본방안*/
@@ -99,6 +98,7 @@
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
+    margin-bottom: 20vh;
 }
 
 #guard_subtext_title {
@@ -129,7 +129,7 @@ ul#guard_text_box > li {
 ul#guard_text_box > li > img {
     width: 100%;
 }
-
+ /*프로세스*/
 .Gprocess_list img {
   max-width: 100%;
   height: auto;
