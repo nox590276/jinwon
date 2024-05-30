@@ -101,16 +101,11 @@
     margin: 0 auto;
     position: relative;
   }
-  .management_policy-container img{
-    max-width: 100%;
-    height: auto;
-    margin: 40px;
-  }
-  
   #hygiene_operation_subtext_title {
     text-align: left;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 10vh;
+    position: relative;
   }
   
   #hygiene_operation_subtext_title span {
@@ -119,12 +114,13 @@
   
   #hygiene_operation_img {
     text-align: center;
+    position: relative;
   }
   
   #hygiene_operation_img img {
     max-width: 70%;
     height: auto;
-    margin: 40px;
+    margin: 10vh auto;
   }
   
   #hygiene_operation_textbox {
@@ -135,7 +131,6 @@
     margin: 0;
     padding: 0;
     position: relative;
-    top: -200px;
   }
   
   #hygiene_operation_textbox > li {
