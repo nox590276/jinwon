@@ -100,6 +100,7 @@
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
+    margin-bottom: 20vh;
   }
   #hygiene_operation_subtext_title {
     text-align: left;
