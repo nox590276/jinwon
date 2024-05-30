@@ -130,12 +130,29 @@ ul#guard_text_box > li > img {
     width: 100%;
 }
 
-.Gprocess_list-container > img {
-    width: 100%;
-    height: auto;
-    margin-top: 3%;
+.Gprocess_list img {
+  max-width: 100%;
+  height: auto;
+}
+.Gprocess_list{
+  width: 100%;
+  /* background-color: #F2F2F2; */
+}
+.Gprocess_list-container{
+  width: 1400px;
+  height: auto;
+  margin: 0px auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* background-color: blue; */
 }
 
+.Gprocess_list-container>img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 10vh;
+}
 
   @media screen and (max-width: 1400px) {
   
