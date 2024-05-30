@@ -142,23 +142,6 @@
     width: calc(20% - 20px);
   }
   
-  #hygiene_operation_textbox > li p {
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  #hygiene_operation_textbox > li > ul {
-    margin-top: 10px;
-    padding-left: 20px;
-  }
-  
-  #hygiene_operation_textbox > li > ul > li {
-    list-style: disc;
-    font-size: 14px;
-    line-height: 21px;
-  }
-  
   @media screen and (max-width: 1024px) {
     #hygiene_operation_textbox > li {
       width: calc(33.33% - 20px);
