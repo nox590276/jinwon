@@ -149,7 +149,7 @@ h4.businessareas_subtitle {
 }
 .expense-container{
   width: 1400px;
-  margin: 10vh auto;
+  margin: 0 auto;
   position: relative;
   top: 0px;
   left: 0px;
@@ -157,6 +157,7 @@ h4.businessareas_subtitle {
 
 .expense-container>img{
   width: 100%;
+  margin:10vh 0 ;
   position: relative;
   /* background-color: red; */
 }
