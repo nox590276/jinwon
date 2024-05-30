@@ -98,7 +98,7 @@
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
 }
 
 #guard_subtext_title {
@@ -116,11 +116,12 @@ ul#guard_text_box {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 3%;
 }
 
 ul#guard_text_box > li {
+  flex: 1 1 calc(33.333% - 20px);
     width: 30%;
     position: relative;
     margin-bottom: 3%;
