@@ -144,7 +144,6 @@ h4.businessareas_subtitle {
 /*관리비용절감방안*/
 .expense {
   width: 100%;
-  height: 600px;
   position: relative;
   /* background-color: blue; */
 }
@@ -158,8 +157,7 @@ h4.businessareas_subtitle {
 
 .expense-container>img{
   width: 100%;
-  position: absolute;
-  top: 100px;
+  position: relative;
   /* background-color: red; */
 }
 .sos{
