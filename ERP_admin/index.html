@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진원종합관리(주) - 대시보드</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="./img/진원종합관리(주)_FULL가로로고.png" alt="회사 로고">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="submenu-toggle">직원관리 <i class="fas fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="./employee-management/employee-management.html">직원 목록</a></li>
+                                <li><a href="#">근태 관리</a></li>
+                                <li><a href="#">퇴직금 관리</a></li>
+                            </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="submenu-toggle">현장관리 <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">건물 정보</a></li>
+                            <li><a href="#">임대차인 정보</a></li>
+                            <li><a href="#">청소용품 신청</a></li>
+                            <li><a href="#">기타비용 신청</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="submenu-toggle">재고관리 </a></li>
+                    <li>
+                        <a href="#" class="submenu-toggle">회계관리 <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">관리비정산</a></li>
+                            <li><a href="#">급여정산</a></li>
+                            <li><a href="#">퇴직금정산</a></li>
+                            <li><a href="#">비용정산</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">통계데이터</i></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <header>
+                <h1>이번주 중요 일정 및 알림</h1>
+            </header>
+            <div class="content">
+                <div class="row">
+                    <div class="card wide">
+                        <h2>일정</h2>
+                        <!-- 일정 내용 -->
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <h2>신규 입사자</h2>
+                            <!-- 신규 입사자 내용 -->
+                        </div>
+                        <div class="card">
+                            <h2>퇴사자</h2>
+                            <!-- 퇴사자 내용 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card full-width">
+                        <h2>관리비 납부현황</h2>
+                        <!-- 관리비 납부현황 내용 -->
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="user-sidebar">
+            <div id="loginForm" class="login-form" style="display: none;">
+                <input type="text" id="loginUsername" placeholder="사용자명">
+                <input type="password" id="loginPassword" placeholder="비밀번호">
+                <button id="btnLogin" class="btn-login">로그인</button>
+            </div>
+            <div id="userInfo" class="user-info">
+                <div class="user-avatar"></div>
+                <h3 id="userName">사용자명</h3>
+                <p id="userPosition">직책</p>
+                <button id="btnLogout" class="action-button">로그아웃</button>
+            </div>
+        </aside>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

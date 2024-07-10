@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar.open {
+    right: 0;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    transition: margin-right 0.3s ease-in-out;
+}
+
+main.sidebar-open {
+    margin-right: 300px;
+}
+
+header {
+    background-color: #E8ECF1;
+    color: #6C737E;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-link img {
+    width: 50px; /* 로고 크기 조정 */
+    height: auto;
+    margin-right: 10px;
+}
+
+.header-link h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo {
+    width: 80%;
+    height: auto;
+}
+.sidebar div{
+    margin-top: 10%;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active {
+    background-color: #e9ecef;
+}
+
+.submenu {
+    padding-left: 20px;
+    display: none;
+}
+
+.submenu-toggle .fa-chevron-down {
+    float: right;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search-bar input, .search-bar select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #6C737E;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.employee-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-add-employee {
+    background-color: #6C737E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.list-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.status-buttons button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.status-buttons button.active {
+    background-color: #6C737E;
+    color: white;
+}
+
+.bulk-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-action {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}
+
+#btnApprove {
+    background-color: #4CAF50;
+}
+
+#btnResign {
+    background-color: #FFA500;
+}
+
+#btnDelete {
+    background-color: #f44336;
+}
+
+.btn-download {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.status-button {
+    padding: 2px 5px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+.status-button.승인 { background-color: #4CAF50; }
+.status-button.미승인 { background-color: #FFA500; }
+.status-button.퇴사자 { background-color: #f44336; }
+
+.user-info {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.user-info p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.btn-logout {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-form {
+    margin-bottom: 20px;
+}
+
+.login-form input {
+    width: 90%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin: 5px auto;
+    margin-left: 6px;
+}
+
+.btn-login {
+    background-color: #FFBE98;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100%;
+}

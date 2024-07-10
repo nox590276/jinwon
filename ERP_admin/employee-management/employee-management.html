@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>직원관리</title>
+    <link rel="stylesheet" href="./css/employee-management.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html" class="header-link">
+                <img src="../img/진원종합관리(주)_FULL로고 복사 1.png" alt="로고">
+                <h1>직원관리</h1>
+            </a>
+            <button id="menuToggle" class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+        <main>
+            <div class="search-bar">
+                <input type="text" id="searchName" placeholder="사용자명">
+                <select id="searchRegion">
+                    <option value="">근무지</option>
+                </select>
+                <select id="searchDepartment">
+                    <option value="">직무</option>
+                </select>
+                <select id="searchAuth">
+                    <option value="">권한</option>
+                </select>
+                <button onclick="searchEmployees()"><i class="fas fa-search"></i> 검색</button>
+            </div>
+
+            <div class="employee-list">
+                <div class="list-header">
+                    <h2>직원목록</h2>
+                    <button class="btn-add-employee">+ 직원등록</button>
+                </div>
+                <div class="list-actions">
+                    <div class="status-buttons">
+                        <button class="btn-status active" data-status="all">전체</button>
+                        <button class="btn-status" data-status="승인">승인</button>
+                        <button class="btn-status" data-status="미승인">미승인</button>
+                        <button class="btn-status" data-status="퇴사자">퇴사자</button>
+                    </div>
+                    <div class="bulk-actions">
+                        <button id="btnApprove" class="btn-action">승인</button>
+                        <button id="btnDelete" class="btn-action">삭제</button>
+                        <button class="btn-download">엑셀 다운로드</button>
+                    </div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" id="selectAll"></th>
+                            <th>직원번호</th>
+                            <th>이름</th>
+                            <th>직책</th>
+                            <th>전화번호</th>
+                            <th>입사일</th>
+                            <th>근무지</th>
+                            <th>이메일</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="employeeTableBody">
+                        <!-- 직원 데이터는 JavaScript로 추가됩니다 -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+        </div>
+        <div id="userInfo" class="user-info" style="display: none;">
+            <p>사용자: <span id="userName"></span></p>
+            <button id="btnLogout" class="btn-logout">로그아웃</button>
+        </div>
+        <div id="loginForm" class="login-form">
+            <input type="text" id="loginUsername" placeholder="사용자명">
+            <input type="password" id="loginPassword" placeholder="비밀번호">
+            <button id="btnLogin" class="btn-login">로그인</button>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="submenu-toggle">직원관리 <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="./employee-management/employee-management.html">직원 목록</a></li>
+                        <li><a href="#">근태 관리</a></li>
+                        <li><a href="#">퇴직금 관리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="submenu-toggle">현장관리 <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">건물 정보</a></li>
+                        <li><a href="#">임대차인 정보</a></li>
+                        <li><a href="#">청소용품 신청</a></li>
+                        <li><a href="#">기타비용 신청</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="submenu-toggle">재고관리 </a></li>
+                <li>
+                    <a href="#" class="submenu-toggle">회계관리 <i class="fas fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="#">관리비정산</a></li>
+                        <li><a href="#">급여정산</a></li>
+                        <li><a href="#">퇴직금정산</a></li>
+                        <li><a href="#">비용정산</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">통계데이터</i></a></li>
+            </ul>
+        </nav>
+    </aside>
+    </div>
+
+   <!-- 직원 등록/수정 모달 -->
+<div id="employeeModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle">직원 정보</h2>
+        <form id="employeeForm">
+            <input type="hidden" id="emp_id">
+            <div class="form-group">
+                <label for="emp_name">직원 이름:*</label>
+                <input type="text" id="emp_name" required>
+            </div>
+            <div class="form-group">
+                <label for="pos_id">직책:*</label>
+                <select id="pos_id" required>
+                    <!-- 옵션은 JavaScript에서 동적으로 생성됩니다 -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="emp_ssn">주민등록번호:*</label>
+                <input type="text" id="emp_ssn" required>
+            </div>
+            <div class="form-group">
+                <label for="emp_phone">전화번호:*</label>
+                <input type="tel" id="emp_phone" required>
+            </div>
+            <div class="form-group">
+                <label for="emp_email">이메일 주소:</label>
+                <input type="email" id="emp_email">
+            </div>
+            <div class="form-group">
+                <label for="emp_address">주소:</label>
+                <input type="text" id="emp_address">
+            </div>
+            <div class="form-group">
+                <label for="loc_name">근무 위치:*</label>
+                <input type="text" id="loc_name" required>
+            </div>
+            <div class="form-group">
+                <label for="dept_id">부서 ID:*</label>
+                <input type="number" id="dept_id" required>
+            </div>
+            <div class="form-group">
+                <label for="emp_hire_date">입사일:*</label>
+                <input type="date" id="emp_hire_date" required>
+            </div>
+            <div class="form-group">
+                <label for="emp_resign_date">퇴사일:</label>
+                <input type="date" id="emp_resign_date">
+            </div>
+            <div class="form-group">
+                <label for="emp_welfare_card">복지카드 소지 여부:</label>
+                <input type="checkbox" id="emp_welfare_card">
+            </div>
+            <div class="form-group" id="emp_crime_check_field" style="display: none;">
+                <label for="emp_crime_check">성범죄 이력 조회 여부:</label>
+                <input type="checkbox" id="emp_crime_check">
+            </div>
+            <button type="submit">저장</button>
+        </form>
+    </div>
+</div>
+
+    <script src="./js/employee-management.js"></script>
+</body>
+
+</html>
